@@ -314,7 +314,7 @@ function bool InternalOnClick( GUIComponent Sender )
                                n=Settings.ClanSkins.Length;
                                Settings.ClanSkins.Length=n+1;
                                Settings.ClanSkins[n].PlayerColor.G=128;
-                               Settings.ClanSkins[n].ModelName="Arclite";
+                               Settings.ClanSkins[n].ModelName="Jakob";
                                Settings.ClanSkins[n].PlayerName="Player"$n;
                                co_TeamSelect.ReadOnly(False);
                                co_TeamSelect.Clear();
@@ -562,96 +562,10 @@ function UpdateAllComponents()
 
 function AddComboBoxItems(GUIComboBox Combo)
 {
-    Combo.AddItem("Abaddon");
-    Combo.AddItem("Ambrosia");
-    Combo.AddItem("Annika");
-    Combo.AddItem("Arclite");
     Combo.AddItem("Aryss");
-    Combo.AddItem("Asp");
-    Combo.AddItem("Axon");
-    Combo.AddItem("Azure");
-    Combo.AddItem("Baird");
-    Combo.AddItem("Barktooth");
-    Combo.AddItem("BlackJack");
-    Combo.AddItem("Brock");
-    Combo.AddItem("Brutalis");
-    Combo.AddItem("Cannonball");
-    Combo.AddItem("Cathode");
-    Combo.AddItem("ClanLord");
-    Combo.AddItem("Cleopatra");
-    Combo.AddItem("Cobalt");
-    Combo.AddItem("Corrosion");
-    Combo.AddItem("Cyclops");
-    Combo.AddItem("Damarus");
-    Combo.AddItem("Diva");
-    Combo.AddItem("Divisor");
-    Combo.AddItem("Domina");
-    Combo.AddItem("Dominator");
-    Combo.AddItem("Drekorig");
-    Combo.AddItem("Enigma");
-    Combo.AddItem("Faraleth");
-    Combo.AddItem("Fate");
-    Combo.AddItem("Frostbite");
-    Combo.AddItem("Gaargod");
-    Combo.AddItem("Garrett");
-    Combo.AddItem("Gkublok");
-    Combo.AddItem("Gorge");
-    Combo.AddItem("Greith");
-    Combo.AddItem("Guardian");
-    Combo.AddItem("Harlequin");
-    Combo.AddItem("Horus");
-    Combo.AddItem("Hyena");
     Combo.AddItem("Jakob");
-    Combo.AddItem("Kaela");
-    Combo.AddItem("Karag");
-    Combo.AddItem("Kane");
-    Combo.AddItem("Komek");
-    Combo.AddItem("Kraagesh");
-    Combo.AddItem("Kragoth");
-    Combo.AddItem("Lauren");
-    Combo.AddItem("Lilith");
-    Combo.AddItem("Makreth");
-    Combo.AddItem("Malcolm");
-    Combo.AddItem("Mandible");
-    Combo.AddItem("Matrix");
-    Combo.AddItem("Memphis");
-    Combo.AddItem("Mekkor");
-    Combo.AddItem("Mokara");
-    Combo.AddItem("Motig");
-    Combo.AddItem("Mr.Crow");
-    Combo.AddItem("Nebri");
-    Combo.AddItem("Ophelia");
     Combo.AddItem("Othello");
-    Combo.AddItem("Outlaw");
-    Combo.AddItem("Prism");
-    Combo.AddItem("Rae");
-    Combo.AddItem("Rapier");
-    Combo.AddItem("Ravage");
-    Combo.AddItem("Reinha");
-    Combo.AddItem("Remus");
-    Combo.AddItem("Renegade");
-    Combo.AddItem("Riker");
-    Combo.AddItem("Roc");
-    Combo.AddItem("Romulus");
-    Combo.AddItem("Rylisa");
-    Combo.AddItem("Sapphire");
-    Combo.AddItem("Satin");
-    Combo.AddItem("Scarab");
-    Combo.AddItem("Selig");
-    Combo.AddItem("Siren");
-    Combo.AddItem("Skakruk");
-    Combo.AddItem("Skrilax");
-    Combo.AddItem("Subversa");
-    Combo.AddItem("Syzygy");
     Combo.AddItem("Tamika");
-    Combo.AddItem("Torch");
-    Combo.AddItem("Thannis");
-    Combo.AddItem("Thorax");
-    Combo.AddItem("Virus");
-    Combo.AddItem("Widowmaker");
-    Combo.AddItem("Wraith");
-    Combo.AddItem("Xan");
-    Combo.AddItem("Zarina");
 }
 
 // begin spinny dude extra crap
@@ -715,7 +629,7 @@ function UpdateSpinnyDude()
         if(PlayerOwner().PlayerReplicationInfo!=None)
             Rec = class'xutil'.static.FindPlayerRecord(PlayerOwner().PlayerReplicationInfo.CharacterName);
         else
-            Rec =  class'xutil'.static.FindPlayerRecord("Gorge");
+            Rec =  class'xutil'.static.FindPlayerRecord("Jakob");
     }
 
 	if (Rec.Race ~= "Juggernaut" || Rec.DefaultName~="Axon" || Rec.DefaultName~="Cyclops" || Rec.DefaultName ~="Virus" )

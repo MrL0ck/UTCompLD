@@ -502,7 +502,6 @@ static simulated function bool MidAirable(class<damagetype> Damagetype)
     || DamageType == class'XWeapons.DamTypeShockBall'
     || DamageType == class'XWeapons.DamTypeAssaultGrenade'
     || DamageType == class'XWeapons.DamTypeShockCombo'
-    || DamageType == class'Onslaught.DamTypeONSAVRiLRocket'
     || DamageType == class'XWeapons.DamTypeRocket'
     || DamageType == class'XWeapons.DamTypeFlakChunk'
     || DamageType == class'XWeapons.DamTypeLinkPlasma'
@@ -656,6 +655,6 @@ defaultproperties
      SLOPEJUMP_EXPONENT=5.000000
      SLOPEJUMP_FACTOR=0.510000
      ShieldStrengthMax=200
-     RequiredEquipment(1)="UTCompv18c.Forward_ShieldGun"
+     RequiredEquipment(1)="UTCompLDv18c.Forward_ShieldGun"
      SuperHealthMax = 200
 }

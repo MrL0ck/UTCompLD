@@ -29,28 +29,13 @@ function InitComponent(GUIController MyController, GUIComponent MyComponent)
 function bool InternalOnClick(GUIComponent C)
 {
     if(C==UTCompMenuButtons[0])
-        PlayerOwner().ClientReplaceMenu(string(class'UTComp_Menu_BrightSkins'));
+        PlayerOwner().ClientReplaceMenu(string(class'UTComp_Menu_OpenedMenu'));
 
     else if(C==UTCompMenuButtons[1])
-        PlayerOwner().ClientReplaceMenu(string(class'UTComp_Menu_ColorNames'));
-
-    else if(C==UTCompMenuButtons[2])
-        PlayerOwner().ClientReplaceMenu(string(class'UTComp_Menu_TeamOverlay'));
-
-    else if(C==UTCompMenuButtons[3])
-        PlayerOwner().ClientReplaceMenu(string(class'UTComp_Menu_Crosshairs'));
-
-    else if(C==UTCompMenuButtons[4])
-        PlayerOwner().ClientReplaceMenu(string(class'UTComp_Menu_Hitsounds'));
-
-    else if(C==UTCompMenuButtons[5])
         PlayerOwner().ClientReplaceMenu(string(class'UTComp_Menu_Voting'));
 
-    else if(C==UTCompMenuButtons[6])
-        PlayerOwner().ClientReplaceMenu(string(class'UTComp_Menu_AutoDemoSS'));
-
-    else if(C==UTCompMenuButtons[7])
-        PlayerOwner().ClientReplaceMenu(string(class'UTComp_Menu_Miscellaneous'));
+    else if(C==UTCompMenuButtons[2])
+        PlayerOwner().ClientCloseMenu();
 
     return false;
 }
@@ -68,85 +53,35 @@ function OnClose(optional bool bCancelled)
 
 defaultproperties
 {
-     Begin Object class=GUIButton name=SkinModelButton
-         Caption="Skins/Models"
-         WinTop=0.150000
+     Begin Object class=GUIButton name=GameButton
+         Caption="Game"
+         WinTop=0.170000
          WinLeft=0.11250000
          WinWidth=0.180000
          WinHeight=0.060000
          OnClick=InternalOnClick
      End Object
-     UTCompMenuButtons(0)=GUIButton'SkinModelButton'
+     UTCompMenuButtons(0)=GUIButton'GameButton'
 
-     Begin Object class=GUIButton name=ColoredNameButton
-         Caption="Colored Names"
-         WinTop=0.150000
+     Begin Object class=GUIButton name=VoteButton
+         Caption="Vote"
+         WinTop=0.170000
          WinLeft=0.31250000
          WinWidth=0.180000
          WinHeight=0.060000
          OnClick=InternalOnClick
      End Object
-     UTCompMenuButtons(1)=GUIButton'ColoredNameButton'
+     UTCompMenuButtons(1)=GUIButton'VoteButton'
 
-     Begin Object class=GUIButton name=OverlayButton
-         Caption="Team Overlay"
-         WinTop=0.150000
-         WinLeft=0.51250000
-         WinWidth=0.180000
-         WinHeight=0.060000
-         OnClick=InternalOnClick
-     End Object
-     UTCompMenuButtons(2)=GUIButton'OverlayButton'
-
-     Begin Object class=GUIButton name=CrosshairButton
-         Caption="Crosshairs"
-         WinTop=0.150000
+     Begin Object class=GUIButton name=CloseButton
+         Caption="Close"
+         WinTop=0.170000
          WinLeft=0.71250000
          WinWidth=0.180000
          WinHeight=0.060000
          OnClick=InternalOnClick
      End Object
-     UTCompMenuButtons(3)=GUIButton'CrosshairButton'
-
-     Begin Object class=GUIButton name=HitsoundButton
-         Caption="Hitsounds"
-         WinTop=0.220000
-         WinLeft=0.11250000
-         WinWidth=0.180000
-         WinHeight=0.060000
-         OnClick=InternalOnClick
-     End Object
-     UTCompMenuButtons(4)=GUIButton'HitsoundButton'
-
-     Begin Object class=GUIButton name=VotingButton
-         Caption="Voting"
-         WinTop=0.220000
-         WinLeft=0.31250000
-         WinWidth=0.180000
-         WinHeight=0.060000
-         OnClick=InternalOnClick
-     End Object
-     UTCompMenuButtons(5)=GUIButton'VotingButton'
-
-     Begin Object class=GUIButton name=AutoDemoButton
-         Caption="Auto Demo/SS"
-         WinTop=0.220000
-         WinLeft=0.51250000
-         WinWidth=0.180000
-         WinHeight=0.060000
-         OnClick=InternalOnClick
-     End Object
-     UTCompMenuButtons(6)=GUIButton'AutoDemoButton'
-
-     Begin Object class=GUIButton name=MiscButton
-         Caption="Misc"
-         WinTop=0.220000
-         WinLeft=0.71250000
-         WinWidth=0.180000
-         WinHeight=0.060000
-         OnClick=InternalOnClick
-     End Object
-     UTCompMenuButtons(7)=GUIButton'MiscButton'
+     UTCompMenuButtons(2)=GUIButton'CloseButton'
 
      Begin Object Class=GUITabControl Name=LoginMenuTC
          bFillSpace=True

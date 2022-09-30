@@ -66,14 +66,14 @@ This version of UTComp is <b>recommended for servers updated to version 3369</b>
 	<ul><li>If you downloaded the <b>zip</b> version:
 		<ul><li>Extract the contents of the .zip file to your /UT2004 main folder. Make sure to keep the folder structure intact.
 		<li>In your server ini, (ut2004.ini by default) add the following line anywhere in the [Engine.GameEngine] section:
-			<dl><dd>ServerPackages=UTCompv18</dl>
-		<li>Load the mutator, either with webadmin, with the &quot;host game&quot; interface, or by adding ?Mutator=UTCompv18.MutUTComp to your server command line.</ul>
+			<dl><dd>ServerPackages=UTCompLDv18c</dl>
+		<li>Load the mutator, either with webadmin, with the &quot;host game&quot; interface, or by adding ?Mutator=UTCompLDv18c.MutUTComp to your server command line.</ul>
 	<li>If you downloaded the <b>ut4mod</b> version:
 		<ul><li>Extract the contents of the .zip file anywhere on your hard drive.
 		<li>Double Click the .ut4mod file, and follow the onscreen instructions.
 		<li>In your server ini, (ut2004.ini by default) add the following line anywhere in the [Engine.GameEngine] section:
-			<dl><dd>ServerPackages=UTCompv18</dl>
-		<li>Load the mutator, either with webadmin, with the &quot;host game&quot; interface, or by adding ?Mutator=UTCompv18.MutUTComp to your server command line.</ul>
+			<dl><dd>ServerPackages=UTCompLDv18c</dl>
+		<li>Load the mutator, either with webadmin, with the &quot;host game&quot; interface, or by adding ?Mutator=UTCompLDv18c.MutUTComp to your server command line.</ul>
 	</ul>
 
 <p><hr>
@@ -229,7 +229,7 @@ UTComp Models allows you to lock the models on teammates and enemies to a specif
 	<li><b>Skin Color Selection Sliders</b>
 		<dl><dd>This box is automatically disabled if Epic Style skins or Brighter Epic Style Skins were selected in the skin type selection box. If UTComp Style Skins are selected, those sliders allow the user to set any skin color on a Red/Green/Blue scale.</dl>
 	<li><b>Force This Model</b>
-		<dl><dd>If checked, all players in the selected team (or with the selected clanskin) will show as the model specified in the model selection box. This only allows stock UT2004 models: trying to force to a custom model will use the default <i>Arclite</i> model.</dl>
+		<dl><dd>If checked, all players in the selected team (or with the selected clanskin) will show as the model specified in the model selection box. This only allows stock UT2004 models: trying to force to a custom model will use the default <i>Jakob</i> model.</dl>
 	<li><b>Force Model Selection box</b>
 		<dl><dd>Allows selection of which model will be used, if <i>Force This Model</i> was checked. Note that model names can be selected in the dropdown box, and also typed manually.</dl>
 </ul>
@@ -508,8 +508,8 @@ Note that the ut4mod version will not work on linux or osx, unless you use ucc t
 <font size="-2"><a href="#readmetop">Back to Top</a></font><p>
 
 Adding a Serverpackage line to your server's <i>ini</i> file is required for UTComp to work properly on a version <b>3186</b>(original UT2004 version) server. If you fail to add that line, players will freeze on the loading screen when they try to connect. It is not required on servers running more recent versions of UT2004, but <i>if you don't add the line, you will not be able to record serverside demos on your server</i>. Your server ini is called <i>ut2004.ini</i> by default. Rented servers often change this, ask your game server company for more info if they do. The line you need to add is in the <b>[Engine.GameEngine]</b> section. You should see a list of ServerPackage= lines there already, add a new one, which needs to be exactly:<p>
-ServerPackages=UTCompv18<p>
-Note that if you're hosting your server on linux, the ServerPackages line is case sensitive, which means if you write ServerPackages=UtCoMpv18, it might not work work. We intentionally distribute the mutator's files in lower case names to make this easy.<br>
+ServerPackages=UTCompLDv18c<p>
+Note that if you're hosting your server on linux, the ServerPackages line is case sensitive, which means if you write ServerPackages=UTCompLDv18c, it might not work work. We intentionally distribute the mutator's files in lower case names to make this easy.<br>
 If you're upgrading from a previous version of UTComp, it is recommended to remove ServerPackages= lines from old versions: if you don't, players will automatically download every version of UTComp that has its own ServerPackages= line, even if its not used anymore.
 
 <p><hr>
@@ -519,11 +519,11 @@ If you're upgrading from a previous version of UTComp, it is recommended to remo
 For UTComp to work, it needs to be loaded as a mutator on your server. There are five ways to do that:
 
 <ol>
-	<li>If you set up your server with the &quot;Host Game&quot; interface, select &quot;UTComp version 1.8a&quot; in the mutator list.
-	<li>Using Webadmin, in the Mutators section, click in &quot;UTComp version 1.8a&quot; and restart the map.
-	<li>Using Webadmin, in the Server console section, type in servertravel DM-DE-Ironic?Mutator=UTCompv18.MutUTComp
-	<li>In game, log in as admin, and type in admin servertravel DM-DE-Ironic?Mutator=UTCompv18.MutUTComp
-	<li>On the server command line, add in ?mutator=UTCompv18.MutUTComp
+	<li>If you set up your server with the &quot;Host Game&quot; interface, select &quot;UTCompLD version 1.8c&quot; in the mutator list.
+	<li>Using Webadmin, in the Mutators section, click in &quot;UTCompLD version 1.8c&quot; and restart the map.
+	<li>Using Webadmin, in the Server console section, type in servertravel DM-DE-Ironic?Mutator=UTCompLDv18c.MutUTComp
+	<li>In game, log in as admin, and type in admin servertravel DM-DE-Ironic?Mutator=UTCompLDv18c.MutUTComp
+	<li>On the server command line, add in ?mutator=UTCompLDv18c.MutUTComp
 </ol>
 If you want to double-check that the mutator loaded properly, start your server (it should start properly at this point), and check the Server Info in the Server Browser. This information is in the lower right corner, once you've selected your server. There should be an entry called Mutator, with the value MutUTComp, and another entry called UTComp Version, with the value 1.8a.
 
@@ -582,7 +582,7 @@ Some of the basic UTComp server settings can be configured directly in Webadmin.
 <b><font size="+1"><a name="topic36">3.6 Server ini Advanced Setup</a></font></b>
 <font size="-2"><a href="#readmetop">Back to Top</a></font><p>
 
-All of these settings are listed in the [UTCompv18.MutUTComp] section of your server ini. You need to start your server at least once for the [UTCompv18.MUTUTComp] section to be created, along with its default settings.
+All of these settings are listed in the [UTCompLDv18c.MutUTComp] section of your server ini. You need to start your server at least once for the [UTCompLDv18c.MUTUTComp] section to be created, along with its default settings.
 <ul>
 	<li><b>bEnableVoting</b> (default: true)
 		<dl><dd>Enables or disables UTComp's voting system
@@ -799,7 +799,7 @@ All of these settings are listed in the [UTCompv18.MutUTComp] section of your se
 			<dd>False = Do not Allow players to vote on the server's Enhanced Netcode setting</dl>
 		</dl>
 
-	<li><b>AlwaysUseThisMutator</b> (default: UTCompv18.mututcomp)
+	<li><b>AlwaysUseThisMutator</b> (default: UTCompLDv18c.mututcomp)
 		<dl><dd>Mutators defined by this setting will always be loaded during UTComp Gametype Voting. To add new mutators, add a new AlwaysUseThisMutator= line, with the proper mutator name. (Example: AlwaysUseThisMutator=xgame.mutnoadrenaline would always load the no adrenaline mutator on every gametype)
 		</dl>
 
@@ -851,7 +851,7 @@ The Options= parameter can be configured with the following settings:<p>
 
 </ul>
 
-These values accept the same parameters than in the [UTCompv18.MUTUTComp] section, refer to the documentation above for settings. Here's an example of a modified TDM line that would always turn on Double Damage, and Team Overlay:<p>
+These values accept the same parameters than in the [UTCompLDv18c.MUTUTComp] section, refer to the documentation above for settings. Here's an example of a modified TDM line that would always turn on Double Damage, and Team Overlay:<p>
 
 <i>GameConfig=(GameClass="XGame.xTeamGame",Prefix="DM",Acronym="TDM",GameName="Team DeathMatch",Mutators=,Options=EnableOverlay=True,DoubleDamage=True)</i><p>
 These values can also be passed as parameters in a regular servertravel line, as an admin, or in the server console / webadmin. For example, you could type <i>servertravel dm-antalus?doubledamage=True?EnableTeamOverlay=False</i>, which would change the map to DM-Antalus, enable Double Damage and disable Team Overlays.
@@ -880,15 +880,15 @@ There are multiple ways to set up a Clan Arena server:
 <ol>
 	<li>If you set up your server with the &quot;Host Game&quot; interface, select &quot;UTComp Clan Arena 1.8a&quot; as the gametype.
 	<li>Using Webadmin, under Current Game, select &quot;UTComp Clan Arena 1.8a&quot; and click Switch.
-	<li>Using Webadmin, in the Server console section, type in servertravel DM-DE-Ironic?game=UTCompv18.UTComp_ClanArena
-	<li>In game, log in as admin, and type in admin servertravel DM-DE-Ironic?game=UTCompv18.UTComp_ClanArena
-	<li>On the server command line, add in ?game=UTCompv18.UTComp_ClanArena
+	<li>Using Webadmin, in the Server console section, type in servertravel DM-DE-Ironic?game=UTCompLDv18c.UTComp_ClanArena
+	<li>In game, log in as admin, and type in admin servertravel DM-DE-Ironic?game=UTCompLDv18c.UTComp_ClanArena
+	<li>On the server command line, add in ?game=UTCompLDv18c.UTComp_ClanArena
 	<li>As a player, vote for UTComp Clan Arena 1.8a in the Gametype Voting page.
 </ol>
 
 Including UTComp as a mutator is not necessary if you intend to use Clan Arena, as it will be loaded automatically. Warmup cannot be entirely disabled in Clan Arena: if the server has warmup enabled, a short 30-second Time-Limited warmup will be used instead.<p>
 
-Also, a new category will appear in your server ini, called UTCompv18.UTComp_ClanArena. Most of the settings in there are the regular settings that you use normally to configure any gametype. (timelimit, goalscore, etc.)
+Also, a new category will appear in your server ini, called UTCompLDv18c.UTComp_ClanArena. Most of the settings in there are the regular settings that you use normally to configure any gametype. (timelimit, goalscore, etc.)
 
 <p><hr>
 <b><font size="+1"><a name="topic41">4.1 Enhanced Netcode Information</a></font></b>

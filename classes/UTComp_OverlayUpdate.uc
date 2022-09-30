@@ -288,12 +288,6 @@ function byte FindWeaponID(Weapon aWeapon)
         return 9;
     else if(ClassicSniperRifle(aWeapon)!=None)
         return 10;
-    else if(ONSMineLayer(aWeapon)!=None)
-        return 12;
-    else if(ONSGrenadeLauncher(aWeapon)!=None)
-        return 13;
-    else if(ONSAVRiL(aWeapon)!=None)
-        return 14;
     else if(Redeemer(aWeapon)!=None)
         return 15;
     else if(Painter(aWeapon)!=None)

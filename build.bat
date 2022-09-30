@@ -1,17 +1,10 @@
 @echo off
 setlocal enabledelayedexpansion enableextensions
 set BUILD_DIR=%~dp0
+set PACKAGE_NAME=UTCompLDv18c
 
 pushd "%BUILD_DIR%"
 
-for /f "delims=" %%X IN ('dir /B /A /S *') DO (
-	for %%D in ("%%~dpX\.") do (
-		set PACKAGE_NAME=%%~nxD
-		goto FoundPkgName
-	)
-)
-
-:FoundPkgName
 pushd ..\System
 
 :: make sure to always rebuild the package

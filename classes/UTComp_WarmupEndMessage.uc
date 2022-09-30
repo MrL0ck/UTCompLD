@@ -28,5 +28,5 @@ static simulated function ClientReceive(
 
 defaultproperties
 {
-     prepare=Sound'AnnouncerClassic.prepare'
+     prepare=Sound'AnnouncerFemale2K4.Play'
 }

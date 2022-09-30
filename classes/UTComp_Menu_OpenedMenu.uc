@@ -199,7 +199,7 @@ DefaultProperties
 		 WinLeft=0.000000
 		 WinTop=0.727502
          TextAlign=TXTA_Center
-         Caption="Visit https://GitHub.com/Deaod/UTComp for new versions."
+         Caption="Visit https://github.com/MrL0ck/UTCompLD for new versions."
      End Object
      l_Mode(4)=GUILabel'NewVersions'
 

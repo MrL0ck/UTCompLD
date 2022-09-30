@@ -94,8 +94,8 @@ defaultproperties
     bStats=True
     DemoRecordingMask="%d-(%t)-%m-%p"
     ScreenShotMask="%d-(%t)-%m-%p"
-    FriendlySound="UTCompv18c.Sounds.HitSoundFriendly"
-    EnemySound="UTCompv18c.Sounds.HitSound"
+    FriendlySound="UTCompLDv18c.Sounds.HitSoundFriendly"
+    EnemySound="UTCompLDv18c.Sounds.HitSound"
     bEnableHitSounds=true
     HitSoundVolume=1.0
     bCPMAStyleHitsounds=true
@@ -126,13 +126,13 @@ defaultproperties
     ColorName(17)=(R=255,G=255,B=255,A=255)
     ColorName(18)=(R=255,G=255,B=255,A=255)
     ColorName(19)=(R=255,G=255,B=255,A=255)
-    FallbackCharacterName="Arclite"
+    FallbackCharacterName="Jakob"
     ClientSkinModeRedTeammate=1
     ClientSkinModeBlueEnemy=1
     BlueEnemyUTCompSkinColor=(R=0,G=0,B=128,A=255)
     RedTeammateUTCompSkinColor=(R=128,G=0,B=0,A=255)
-    BlueEnemyModelName="Arclite"
-    RedTeammateModelName="Arclite"
+    BlueEnemyModelName="Jakob"
+    RedTeammateModelName="Jakob"
     bEnableDarkSkinning=True
     DesiredNetUpdateRate=90
 }

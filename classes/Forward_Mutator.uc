@@ -10,11 +10,11 @@ var bool bEnableDoubleDamage;
 var bool bWeaponsChecked;
 var array<string> sWeaponsToGive;
 
-var string WeaponClassNames[12];
-var string AltWeaponClassNames[12];
-var string ReplacedWeaponClassNames[12];
-var string NewNetWeaponClassNames[12];
-var string UTCompWeaponClassNames[12];
+var string WeaponClassNames[9];
+var string AltWeaponClassNames[9];
+var string ReplacedWeaponClassNames[9];
+var string NewNetWeaponClassNames[9];
+var string UTCompWeaponClassNames[9];
 
 simulated function PreBeginPlay()
 {
@@ -550,61 +550,46 @@ DefaultProperties
      ReplacedWeaponClassNames(6)="xWeapons.BioRifle"
      ReplacedWeaponClassNames(7)="xWeapons.AssaultRifle"
      ReplacedWeaponClassNames(8)="UTClassic.ClassicSniperRifle"
-     ReplacedWeaponClassNames(9)="Onslaught.ONSAVRiL"
-     ReplacedWeaponClassNames(10)="Onslaught.ONSMineLayer"
-     ReplacedWeaponClassNames(11)="Onslaught.ONSGrenadeLauncher"
 
-     WeaponClassNames(0)="UTCompv18c.Forward_NewNet_ShockRifle"
-     WeaponClassNames(1)="UTCompv18c.Forward_NewNet_LinkGun"
-     WeaponClassNames(2)="UTCompv18c.Forward_NewNet_MiniGun"
-     WeaponClassNames(3)="UTCompv18c.Forward_NewNet_FlakCannon"
-     WeaponClassNames(4)="UTCompv18c.Forward_NewNet_RocketLauncher"
-     WeaponClassNames(5)="UTCompv18c.Forward_NewNet_SniperRifle"
-     WeaponClassNames(6)="UTCompv18c.Forward_NewNet_BioRifle"
-     WeaponClassNames(7)="UTCompv18c.Forward_NewNet_AssaultRifle"
-     WeaponClassNames(8)="UTCompv18c.Forward_NewNet_SniperRifle"
-     WeaponClassNames(9)="UTCompv18c.NewNet_ONSAVRiL"
-     WeaponClassNames(10)="UTCompv18c.NewNet_ONSMineLayer"
-     WeaponClassNames(11)="UTCompv18c.NewNet_ONSGrenadeLauncher"
+     WeaponClassNames(0)="UTCompLDv18c.Forward_NewNet_ShockRifle"
+     WeaponClassNames(1)="UTCompLDv18c.Forward_NewNet_LinkGun"
+     WeaponClassNames(2)="UTCompLDv18c.Forward_NewNet_MiniGun"
+     WeaponClassNames(3)="UTCompLDv18c.Forward_NewNet_FlakCannon"
+     WeaponClassNames(4)="UTCompLDv18c.Forward_NewNet_RocketLauncher"
+     WeaponClassNames(5)="UTCompLDv18c.Forward_NewNet_SniperRifle"
+     WeaponClassNames(6)="UTCompLDv18c.Forward_NewNet_BioRifle"
+     WeaponClassNames(7)="UTCompLDv18c.Forward_NewNet_AssaultRifle"
+     WeaponClassNames(8)="UTCompLDv18c.Forward_NewNet_SniperRifle"
 
-     AltWeaponClassNames(0)="UTCompv18c.Forward_UTComp_ShockRifle"
-     AltWeaponClassNames(1)="UTCompv18c.Forward_UTComp_LinkGun"
-     AltWeaponClassNames(2)="UTCompv18c.Forward_UTComp_MiniGun"
-     AltWeaponClassNames(3)="UTCompv18c.Forward_UTComp_FlakCannon"
-     AltWeaponClassNames(4)="UTCompv18c.Forward_UTComp_RocketLauncher"
-     AltWeaponClassNames(5)="UTCompv18c.Forward_UTComp_SniperRifle"
-     AltWeaponClassNames(6)="UTCompv18c.Forward_UTComp_BioRifle"
-     AltWeaponClassNames(7)="UTCompv18c.Forward_UTComp_AssaultRifle"
-     AltWeaponClassNames(8)="UTCompv18c.Forward_UTComp_SniperRifle"
-     AltWeaponClassNames(9)="Onslaught.ONSAVRiL"
-     AltWeaponClassNames(10)="Onslaught.ONSMineLayer"
-     AltWeaponClassNames(11)="Onslaught.ONSGrenadeLauncher"
+     AltWeaponClassNames(0)="UTCompLDv18c.Forward_UTComp_ShockRifle"
+     AltWeaponClassNames(1)="UTCompLDv18c.Forward_UTComp_LinkGun"
+     AltWeaponClassNames(2)="UTCompLDv18c.Forward_UTComp_MiniGun"
+     AltWeaponClassNames(3)="UTCompLDv18c.Forward_UTComp_FlakCannon"
+     AltWeaponClassNames(4)="UTCompLDv18c.Forward_UTComp_RocketLauncher"
+     AltWeaponClassNames(5)="UTCompLDv18c.Forward_UTComp_SniperRifle"
+     AltWeaponClassNames(6)="UTCompLDv18c.Forward_UTComp_BioRifle"
+     AltWeaponClassNames(7)="UTCompLDv18c.Forward_UTComp_AssaultRifle"
+     AltWeaponClassNames(8)="UTCompLDv18c.Forward_UTComp_SniperRifle"
 
-     NewNetWeaponClassNames(0)="UTCompv18c.NewNet_ShockRifle"
-     NewNetWeaponClassNames(1)="UTCompv18c.NewNet_LinkGun"
-     NewNetWeaponClassNames(2)="UTCompv18c.NewNet_MiniGun"
-     NewNetWeaponClassNames(3)="UTCompv18c.NewNet_FlakCannon"
-     NewNetWeaponClassNames(4)="UTCompv18c.NewNet_RocketLauncher"
-     NewNetWeaponClassNames(5)="UTCompv18c.NewNet_SniperRifle"
-     NewNetWeaponClassNames(6)="UTCompv18c.NewNet_BioRifle"
-     NewNetWeaponClassNames(7)="UTCompv18c.NewNet_AssaultRifle"
-     NewNetWeaponClassNames(8)="UTCompv18c.NewNet_ClassicSniperRifle"
-     NewNetWeaponClassNames(9)="UTCompv18c.NewNet_ONSAVRiL"
-     NewNetWeaponClassNames(10)="UTCompv18c.NewNet_ONSMineLayer"
-     NewNetWeaponClassNames(11)="UTCompv18c.NewNet_ONSGrenadeLauncher"
+     NewNetWeaponClassNames(0)="UTCompLDv18c.NewNet_ShockRifle"
+     NewNetWeaponClassNames(1)="UTCompLDv18c.NewNet_LinkGun"
+     NewNetWeaponClassNames(2)="UTCompLDv18c.NewNet_MiniGun"
+     NewNetWeaponClassNames(3)="UTCompLDv18c.NewNet_FlakCannon"
+     NewNetWeaponClassNames(4)="UTCompLDv18c.NewNet_RocketLauncher"
+     NewNetWeaponClassNames(5)="UTCompLDv18c.NewNet_SniperRifle"
+     NewNetWeaponClassNames(6)="UTCompLDv18c.NewNet_BioRifle"
+     NewNetWeaponClassNames(7)="UTCompLDv18c.NewNet_AssaultRifle"
+     NewNetWeaponClassNames(8)="UTCompLDv18c.NewNet_ClassicSniperRifle"
 
-     UTCompWeaponClassNames(0)="UTCompv18c.UTComp_ShockRifle"
-     UTCompWeaponClassNames(1)="UTCompv18c.UTComp_LinkGun"
-     UTCompWeaponClassNames(2)="UTCompv18c.UTComp_MiniGun"
-     UTCompWeaponClassNames(3)="UTCompv18c.UTComp_FlakCannon"
-     UTCompWeaponClassNames(4)="UTCompv18c.UTComp_RocketLauncher"
-     UTCompWeaponClassNames(5)="UTCompv18c.UTComp_SniperRifle"
-     UTCompWeaponClassNames(6)="UTCompv18c.UTComp_BioRifle"
-     UTCompWeaponClassNames(7)="UTCompv18c.UTComp_AssaultRifle"
-     UTCompWeaponClassNames(8)="UTCompv18c.UTComp_ClassicSniperRifle"
-     UTCompWeaponClassNames(9)="UTCompv18c.UTComp_ONSAVRiL"
-     UTCompWeaponClassNames(10)="UTCompv18c.UTComp_ONSMineLayer"
-     UTCompWeaponClassNames(11)="UTCompv18c.UTComp_ONSGrenadeLauncher"
+     UTCompWeaponClassNames(0)="UTCompLDv18c.UTComp_ShockRifle"
+     UTCompWeaponClassNames(1)="UTCompLDv18c.UTComp_LinkGun"
+     UTCompWeaponClassNames(2)="UTCompLDv18c.UTComp_MiniGun"
+     UTCompWeaponClassNames(3)="UTCompLDv18c.UTComp_FlakCannon"
+     UTCompWeaponClassNames(4)="UTCompLDv18c.UTComp_RocketLauncher"
+     UTCompWeaponClassNames(5)="UTCompLDv18c.UTComp_SniperRifle"
+     UTCompWeaponClassNames(6)="UTCompLDv18c.UTComp_BioRifle"
+     UTCompWeaponClassNames(7)="UTCompLDv18c.UTComp_AssaultRifle"
+     UTCompWeaponClassNames(8)="UTCompLDv18c.UTComp_ClassicSniperRifle"
 
 
      bAddtoServerPackages=true

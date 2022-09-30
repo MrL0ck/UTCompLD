@@ -115,12 +115,6 @@ exec function GetWeapon(class<Weapon> NewWeaponClass )
             NewWeaponClass = class'Forward_NewNet_LinkGun';
         else if (NewWeaponClass == class'MiniGun')
             NewWeaponClass = class'Forward_NewNet_MiniGun';
-        else if (NewWeaponClass == class'ONSAvril')
-            NewWeaponClass = class'NewNet_ONSAvril';
-        else if (NewWeaponClass == class'ONSGrenadeLauncher')
-            NewWeaponClass = class'NewNet_ONSGrenadeLauncher';
-        else if (NewWeaponClass == class'ONSMineLayer')
-            NewWeaponClass = class'NewNet_ONSMineLayer';
         else if (NewWeaponClass == class'RocketLauncher')
             NewWeaponClass = class'Forward_NewNet_RocketLauncher';
         else if (NewWeaponClass == class'ShockRifle')
@@ -140,12 +134,6 @@ exec function GetWeapon(class<Weapon> NewWeaponClass )
             NewWeaponClass = class'Forward_UTComp_LinkGun';
         else if (NewWeaponClass == class'MiniGun')
             NewWeaponClass = class'Forward_UTComp_MiniGun';
-        // else if (NewWeaponClass == class'ONSAvril')
-        //     NewWeaponClass = class'Forward_UTComp_ONSAvril';
-        // else if (NewWeaponClass == class'ONSGrenadeLauncher')
-        //     NewWeaponClass = class'Forward_UTComp_ONSGrenadeLauncher';
-        // else if (NewWeaponClass == class'ONSMineLayer')
-        //     NewWeaponClass = class'Forward_UTComp_ONSMineLayer';
         else if (NewWeaponClass == class'RocketLauncher')
             NewWeaponClass = class'Forward_UTComp_RocketLauncher';
         else if (NewWeaponClass == class'ShockRifle')

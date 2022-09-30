@@ -272,16 +272,8 @@ simulated function ChangeDeathMessageOrder()
 {
     if(class'Crushed'.default.DeathString ~="%o was crushed by %k.")
     {
-        class'DamTypeHoverBikeHeadshot'.default.DeathString = "%o was run over by %k";
         class'DamRanOver'.default.DeathString = "%o was run over by %k";
-        class'DamTypeHoverBikePlasma'.default.DeathString ="%o was killed by %k with a Manta's Plasma.";
-        class'DamTypeONSAvriLRocket'.default.DeathString="%o was blown away by %k with an Avril.";
-        class'DamTypeONSVehicleExplosion'.default.DeathString="%o was taken out by %k with a vehicle explosion.";
-        class'DamTypePRVLaser'.default.DeathString="%o was laser shocked by %k";
         class'DamTypeRoadkill'.default.DeathString="%o was run over by %k";
-        class'DamTypeTankShell'.default.DeathString="%o was blown into flaming bits by %k's tank shell.";
-        class'DamTypeTurretBeam'.default.DeathString="%o was turret electrivied by %k.";
-        class'DamTypeMASPlasma'.default.DeathString="%o was plasmanted by %k's Leviathan turret.";
         class'DamTypeClassicHeadshot'.default.DeathString="%o's skull was blown apart by %k's Sniper Rifle.";
         class'DamTypeClassicSniper'.default.DeathString="%o was killed by %k with a Sniper Rifle";
     }
@@ -2901,12 +2893,6 @@ exec function GetWeapon(class<Weapon> NewWeaponClass )
             NewWeaponClass = class'NewNet_LinkGun';
         else if (NewWeaponClass == class'MiniGun')
             NewWeaponClass = class'NewNet_MiniGun';
-        else if (NewWeaponClass == class'ONSAvril')
-            NewWeaponClass = class'NewNet_ONSAvril';
-        else if (NewWeaponClass == class'ONSGrenadeLauncher')
-            NewWeaponClass = class'NewNet_ONSGrenadeLauncher';
-        else if (NewWeaponClass == class'ONSMineLayer')
-            NewWeaponClass = class'NewNet_ONSMineLayer';
         else if (NewWeaponClass == class'RocketLauncher')
             NewWeaponClass = class'NewNet_RocketLauncher';
         else if (NewWeaponClass == class'ShockRifle')
@@ -2928,12 +2914,6 @@ exec function GetWeapon(class<Weapon> NewWeaponClass )
             NewWeaponClass = class'UTComp_LinkGun';
         else if (NewWeaponClass == class'MiniGun')
             NewWeaponClass = class'UTComp_MiniGun';
-        // else if (NewWeaponClass == class'ONSAvril')
-        //     NewWeaponClass = class'UTComp_ONSAvril';
-        // else if (NewWeaponClass == class'ONSGrenadeLauncher')
-        //     NewWeaponClass = class'UTComp_ONSGrenadeLauncher';
-        // else if (NewWeaponClass == class'ONSMineLayer')
-        //     NewWeaponClass = class'UTComp_ONSMineLayer';
         else if (NewWeaponClass == class'RocketLauncher')
             NewWeaponClass = class'UTComp_RocketLauncher';
         else if (NewWeaponClass == class'ShockRifle')
@@ -3786,8 +3766,8 @@ simulated final function SendWeaponEffect(
 defaultproperties
 {
 
-     UTCompMenuClass="UTCompv18c.UTComp_Menu_OpenedMenu"
-     UTCompVotingMenuClass="UTCompv18c.UTComp_Menu_VoteInProgress"
+     UTCompMenuClass="UTCompLDv18c.UTComp_Menu_OpenedMenu"
+     UTCompVotingMenuClass="UTCompLDv18c.UTComp_Menu_VoteInProgress"
      redmessagecolor=(B=64,G=64,R=255,A=255)
      greenmessagecolor=(B=128,G=255,R=128,A=255)
      bluemessagecolor=(B=255,G=192,R=64,A=255)
@@ -3817,9 +3797,6 @@ defaultproperties
      WepStatDamTypesAlt(12)=Class'XWeapons.DamTypeAssaultGrenade'
      WepStatDamTypesPrim(0)=Class'XWeapons.DamTypeShockCombo'
      WepStatDamTypesPrim(1)=Class'XWeapons.DamTypeSuperShockBeam'
-     WepStatDamTypesPrim(2)=Class'Onslaught.DamTypeONSAVRiLRocket'
-     WepStatDamTypesPrim(3)=Class'Onslaught.DamTypeONSGrenade'
-     WepStatDamTypesPrim(4)=Class'Onslaught.DamTypeONSMine'
      WepStatDamTypesPrim(5)=Class'XWeapons.DamTypeSniperShot'
      WepStatDamTypesPrim(6)=Class'XWeapons.DamTypeRocket'
      WepStatDamTypesPrim(7)=Class'XWeapons.DamTypeFlakChunk'

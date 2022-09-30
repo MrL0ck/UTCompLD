@@ -1,4 +1,20 @@
-/System/**/*
+# General
+.DS_Store
+.AppleDouble
+.LSOverride
 
+# Thumbnails
+._*
+
+# Idea
+.idea
+
+# VS Code
+.vscode
+
+# Sublime
 *.sublime-workspace
+
+# Build-related
+/System/**/*
 PostBuildHook.bat

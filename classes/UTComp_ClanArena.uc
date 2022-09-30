@@ -729,27 +729,27 @@ function AddGameSpecificInventory(Pawn P)
     local inventory inv;
     if(!class'MutUTComp'.default.bEnableEnhancedNetCode)
     {
-        GiveWeaponTo("UTCompv18c.UTComp_ShieldGun", P, -1, -1);
-        GiveWeaponTo("UTCompv18c.UTComp_AssaultRifle", P, AssaultRifleAmmo, AssaultRifleGrenades);
-        GiveWeaponTo("UTCompv18c.UTComp_BioRifle", P, BioRifleAmmo, -2);
-        GiveWeaponTo("UTCompv18c.UTComp_ShockRifle", P, ShockRifleAmmo, -2);
-        GiveWeaponTo("UTCompv18c.UTComp_LinkGun", P, LinkGunAmmo, -2);
-        GiveWeaponTo("UTCompv18c.UTComp_MiniGun", P, MinigunAmmo, -2);
-        GiveWeaponTo("UTCompv18c.UTComp_FlakCannon", P, FlakCannonAmmo, -2);
-        GiveWeaponTo("UTCompv18c.UTComp_RocketLauncher", P, RocketLauncherAmmo, -2);
-        GiveWeaponTo("UTCompv18c.UTComp_SniperRifle", P, LightningGunAmmo, -2);
+        GiveWeaponTo("UTCompLDv18c.UTComp_ShieldGun", P, -1, -1);
+        GiveWeaponTo("UTCompLDv18c.UTComp_AssaultRifle", P, AssaultRifleAmmo, AssaultRifleGrenades);
+        GiveWeaponTo("UTCompLDv18c.UTComp_BioRifle", P, BioRifleAmmo, -2);
+        GiveWeaponTo("UTCompLDv18c.UTComp_ShockRifle", P, ShockRifleAmmo, -2);
+        GiveWeaponTo("UTCompLDv18c.UTComp_LinkGun", P, LinkGunAmmo, -2);
+        GiveWeaponTo("UTCompLDv18c.UTComp_MiniGun", P, MinigunAmmo, -2);
+        GiveWeaponTo("UTCompLDv18c.UTComp_FlakCannon", P, FlakCannonAmmo, -2);
+        GiveWeaponTo("UTCompLDv18c.UTComp_RocketLauncher", P, RocketLauncherAmmo, -2);
+        GiveWeaponTo("UTCompLDv18c.UTComp_SniperRifle", P, LightningGunAmmo, -2);
     }
     else
     {
-        GiveWeaponTo("UTCompv18c.UTComp_ShieldGun", P, -1, -1);
-        GiveWeaponTo("UTCompv18c.NewNet_AssaultRifle", P, AssaultRifleAmmo, AssaultRifleGrenades);
-        GiveWeaponTo("UTCompv18c.NewNet_BioRifle", P, BioRifleAmmo, -2);
-        GiveWeaponTo("UTCompv18c.NewNet_ShockRifle", P, ShockRifleAmmo, -2);
-        GiveWeaponTo("UTCompv18c.NewNet_LinkGun", P, LinkGunAmmo, -2);
-        GiveWeaponTo("UTCompv18c.NewNet_MiniGun", P, MinigunAmmo, -2);
-        GiveWeaponTo("UTCompv18c.NewNet_FlakCannon", P, FlakCannonAmmo, -2);
-        GiveWeaponTo("UTCompv18c.NewNet_RocketLauncher", P, RocketLauncherAmmo, -2);
-        GiveWeaponTo("UTCompv18c.NewNet_SniperRifle", P, LightningGunAmmo, -2);
+        GiveWeaponTo("UTCompLDv18c.UTComp_ShieldGun", P, -1, -1);
+        GiveWeaponTo("UTCompLDv18c.NewNet_AssaultRifle", P, AssaultRifleAmmo, AssaultRifleGrenades);
+        GiveWeaponTo("UTCompLDv18c.NewNet_BioRifle", P, BioRifleAmmo, -2);
+        GiveWeaponTo("UTCompLDv18c.NewNet_ShockRifle", P, ShockRifleAmmo, -2);
+        GiveWeaponTo("UTCompLDv18c.NewNet_LinkGun", P, LinkGunAmmo, -2);
+        GiveWeaponTo("UTCompLDv18c.NewNet_MiniGun", P, MinigunAmmo, -2);
+        GiveWeaponTo("UTCompLDv18c.NewNet_FlakCannon", P, FlakCannonAmmo, -2);
+        GiveWeaponTo("UTCompLDv18c.NewNet_RocketLauncher", P, RocketLauncherAmmo, -2);
+        GiveWeaponTo("UTCompLDv18c.NewNet_SniperRifle", P, LightningGunAmmo, -2);
     }
     P.SuperHealthMax = MaxHealth;
     xPawn(P).ShieldStrengthMax = MaxArmor;
@@ -867,7 +867,7 @@ DefaultProperties
     GoalScore=8
     GameName="UTComp Clan Arena 1.8c"
     bAllowWeaponThrowing=false
-    SecondaryMutatorClass="UTCompv18c.MutUTComp"
+    SecondaryMutatorClass="UTCompLDv18c.MutUTComp"
     Description = "No Powerups, No Distractions, Full Weapon and armor Load! Kill the enemy team before they kill yours. Dead players are out until the round is over."
     FriendlyFireScale = 0.0
     BroadcastHandlerClass="BonusPack.LMSBroadcastHandler"
